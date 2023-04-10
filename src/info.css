@@ -1,0 +1,26 @@
+.info {
+    margin-top: 80px;
+    font-size: 30px;
+    justify-content: center;
+    color: #FFF;
+    align-items: center;
+}
+
+#sublogo {
+    border: none;
+    max-width: 250px;
+    max-height: 200px;
+    margin-top: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .info {
+        font-size: 20px;
+    }
+}

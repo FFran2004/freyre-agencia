@@ -1,0 +1,45 @@
+#bienvenida {
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px 50px 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+#logo {
+    border: none;
+    max-width: 250px;
+    max-height: 200px;
+    margin-top: 150px;
+    border-radius: 50%;
+    animation: luz 1s ease-in-out infinite alternate;
+}
+
+#iniciodesc {
+    padding: 25px;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 700px) {
+    #iniciodesc {
+        font-size: 23px;
+        padding: 10px;
+        border-radius: 40px;
+    }
+}
+
+
+@keyframes luz {
+    from {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      }
+      to {
+        box-shadow: 0 0 20px rgb(253, 253, 253);
+      }
+}
+
+
+
