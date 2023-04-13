@@ -13,6 +13,7 @@ import Contacto from './paginas/contacto';
 import Info from './paginas/info';
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import Inicio from './inicio';
+import Perros from './paginas/perros';
 
 
 function App() {
@@ -30,9 +31,11 @@ function App() {
           <Nav.Link href="/cursos" className="link">Cursos</Nav.Link>
           <Nav.Link href="/info" className="link">Acerca de</Nav.Link>
           <Nav.Link href="/contacto" className="link">Contacto</Nav.Link>
+          <Nav.Link href="/extras" className="link">Extras</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
+
 
 
       <Router>
@@ -41,6 +44,7 @@ function App() {
           <Route path="/cursos" element={<Cursospag />}    />
           <Route path="/info" element={<Info />}            />
           <Route path="/contacto" element={<Contacto />}    />
+          <Route path="/extras" element={<Perros />}    />
         </Routes>
       </Router>
 

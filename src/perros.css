@@ -1,0 +1,12 @@
+#razas {
+    max-width: 200px;
+    padding-right: 20px;
+    padding-top: 30px;
+    margin-top: 15px;
+}
+
+li {
+    color: #FFF;
+    font-size: 25px;
+}
+
