@@ -1,10 +1,11 @@
-.cursos {
+#cursos {
     max-width: 200px;
     max-height: 200px;
     border-radius: 15px;
     margin-top: 50px;
     border: dotted;
 }
+
 
 * {
     font-family: 'Josefin Sans', sans-serif;
@@ -17,8 +18,8 @@ body {
     background-attachment: fixed;
 }
 
-.descripcion {
-    color: #FFFFFF;
+p {
+    color: #ffffff;
     text-align: justify;
     padding-right: 30px;
     margin-top: 50px;
@@ -26,9 +27,13 @@ body {
     border-radius: 40px;
 }
 
+#logo-align {
+    text-align: center;
+}
+
 @media screen and (max-width: 700px) {
 
-    .descripcion {
+    p {
         font-size: 15px;
         padding: 10px;
         border-radius: 25px;
@@ -36,7 +41,7 @@ body {
 }
 
 @media screen and (min-width: 700px) {
-    .descripcion {
+    p {
         padding: 15px;
     }
 }

@@ -21,7 +21,7 @@ function App() {
     <>
     <div className="container">
 
-
+      
     <Navbar className="navbar fixed-top navbar-dark" expand="lg">
       <Navbar.Brand href="/" className="logo">FREYRE</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav"/>
