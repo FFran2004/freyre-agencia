@@ -12,32 +12,56 @@
     border: none;
     max-width: 250px;
     max-height: 200px;
-    margin-top: 150px;
+    margin-top: 50px;
     border-radius: 50%;
-    animation: luz 1s ease-in-out infinite alternate;
+    animation: luz 4s infinite;
+    position: relative;
+    z-index: -1;
 }
 
 #iniciodesc {
     padding: 25px;
     font-size: 30px;
-    color: #FFFFFF;
+    text-align: center;
+    color: #fff;
+    border: 4px solid #fff;
+    border-radius: 15px;
+    background-color: #000;
 }
 
-@media only screen and (max-width: 700px) {
+#resaltado {
+    color: #FF00FF;
+}
+
+#resaltado2 {
+    color: #c818ce;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
     #iniciodesc {
         font-size: 23px;
         padding: 10px;
-        border-radius: 40px;
     }
+
+
 }
 
 
 @keyframes luz {
-    from {
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    0% {
+        filter: hue-rotate(0deg);
       }
-      to {
-        box-shadow: 0 0 20px rgb(253, 253, 253);
+      100% {
+        filter: hue-rotate(360deg);
       }
 }
 

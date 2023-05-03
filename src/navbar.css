@@ -1,27 +1,127 @@
-.navbar {
-    background-color: #000000;
-}
+.header {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 4px solid rgba(75, 75, 75, 0.473);
+  }
 
-.link {
-    color: #ffffff;
-    padding: 15px;
-    transition: 0.3s;
-}
+  .toggle {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+  }
 
-.logo {
-    color: #ffffff;
+  .rotate {
+    transform: rotate(180deg);
+  }
+  
+  
+  .logo {
+    color: #fff;
     padding: 10px;
     transition: 0.3s;
     font-family: 'Fasthand', cursive;
     font-size: 30px;
-}
+    font-weight: 400;
+  }
+  
+  .logo:hover {
+    color: red;
+  }
+  
+  #menu-icon {
+    font-size: 36px;
+    color: #fff;
+    display: none;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .navbar a {
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 30px;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: red;
+  }
 
-.link:hover {
-    color: rgb(153, 75, 255);
-    transition: 0.5s all;
-}
 
-.logo:hover {
-    color: rgb(153, 75, 255);
-    transition: 0.5s all;
-}
+
+
+
+
+  @media only screen and (max-width: 992px) {
+    .header {
+      padding: 1.25rem 4%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+
+    .navbar a {
+      font-size: 30px;
+    }
+
+    .toggle {
+      display: inline-block;
+      position: fixed;
+      right: 30px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .links {
+      display: none;
+    }
+
+
+      .active {
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 20px;
+        top: 200px;
+        text-align: center;
+        height: calc(85vh - 150px);
+        gap: 50px;
+      }
+      
+      .hide-logo {
+        display: none;
+      }
+
+      .toggle.up {
+        transform: translateY(-200px);
+      }
+
+      .center {
+        display: flex;
+        left: 80px;
+      }
+    }
+
+
+ 
+
+  

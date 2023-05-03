@@ -7,13 +7,13 @@ export default class Cursos extends React.Component {
     render() {
         return(
             <>
-               <div className="row">
-            <div className="col-12">
-              <img src={this.props.img} alt={this.props.nombre} id="cursos" />
-              <p className="descripcion">{this.props.descripcion}</p>
+            <div className="card">
+            <img src={this.props.img} alt={this.props.alt} />
+            <div>
+            <h3 className="card-title" id="title">{this.props.title}</h3>
+            <p>{this.props.descripcion}</p>
             </div>
-          </div>
-            
+            </div>
             </>
         )
     }
