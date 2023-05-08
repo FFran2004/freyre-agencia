@@ -7,11 +7,12 @@ export default class MiNav extends React.Component {
         const links = document.querySelector('.links');
         const logo = document.querySelector('.logo')
 
+        
             toggle.classList.toggle('rotate');
-            links.classList.toggle('active');
-            logo.classList.toggle('hide-logo');
             toggle.classList.toggle('up');
+            links.classList.toggle('active');
             links.classList.toggle('center');
+            logo.classList.toggle('hide-logo');
     }
 
     

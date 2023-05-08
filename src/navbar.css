@@ -113,11 +113,16 @@
 
       .toggle.up {
         transform: translateY(-200px);
+        transition: transform 0.7s ease-in-out;
       }
 
       .center {
         display: flex;
         left: 80px;
+      }
+
+      .toggle.animacion-navbar {
+        transition: 0.7s all;
       }
     }
 
