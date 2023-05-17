@@ -1,7 +1,6 @@
 import './App.css';
 
-//navbar
-import navbar from './paginas/navbar';
+
 
 
 
@@ -9,7 +8,7 @@ import navbar from './paginas/navbar';
 //rutas 
 import Cursospag from './paginas/cursospag';
 import Info from './paginas/info';
-import { Routes, Route, BrowserRouter as Router, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Inicio from './inicio';
 import MiNav from './paginas/navbar';
 
